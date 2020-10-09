@@ -103,7 +103,7 @@ class MovieFinder extends React.Component {
                 );
               }
               return results.map((movie) => {
-                <Movie key={movie.imdbID} movie={movie} />;
+                return <Movie key={movie.imdbID} movie={movie} />;
               });
             })()}
           </div>
